@@ -1,0 +1,63 @@
+body {
+  font-family: fantasy;
+  text-align: center;
+  background: linear-gradient(#292929, #1a1a1a);
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  background: goldenrod;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.map {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin: 20px auto;
+  background: url('https://i.imgur.com/dZt4AWN.png') no-repeat center center;
+  background-size: cover;
+  border: 3px solid gold;
+}
+.character {
+  width: 40px;
+  height: 40px;
+  background: url('https://i.imgur.com/xN3zZ0L.png') no-repeat center center;
+  background-size: contain;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  transition: top 0.5s ease, left 0.5s ease;
+}
+#dialog-box {
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid gold;
+  padding: 15px;
+  width: 80%;
+  margin: 20px auto;
+  display: none;
+}
+#battle-screen {
+  display: none;
+  background: rgba(20, 20, 20, 0.9);
+  border: 2px solid crimson;
+  padding: 20px;
+  width: 300px;
+  margin: 20px auto;
+}
+#stats, #inventory {
+  background: #111;
+  padding: 15px;
+  border: 2px solid #888;
+  margin: 10px auto;
+  width: 300px;
+  border-radius: 10px;
+}
+.inventory-item {
+  margin: 5px 0;
+}
