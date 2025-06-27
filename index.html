@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fantasy RPG Adventure</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game">
+    <h1>Fantasy RPG Adventure</h1>
+    <div class="map">
+      <div class="character" id="character"></div>
+    </div>
+    <button onclick="move()">Move</button>
+    <button onclick="resetGame()">Reset Game</button>
+    <button onclick="startBattle()">Battle!</button>
+    <div id="dialog-box"></div>
+    <div id="stats">
+      <h3>Character Stats</h3>
+      <p>HP: <span id="stat-hp">50</span></p>
+      <p>Attack: <span id="stat-atk">10</span></p>
+      <p>Defense: <span id="stat-def">5</span></p>
+    </div>
+    <div id="inventory">
+      <h3>Inventory</h3>
+      <div class="inventory-item">Potion <button onclick="useItem('potion')">Use</button></div>
+      <div class="inventory-item">Sword <button onclick="equipItem('sword')">Equip</button></div>
+    </div>
+    <div id="battle-screen">
+      <p><strong>Enemy:</strong> <span id="enemy-hp">30</span> HP</p>
+      <p><strong>You:</strong> <span id="player-hp">30</span> HP</p>
+      <button onclick="playerAttack()">Attack</button>
+    </div>
+  </div>
+  <script src="game.js"></script>
+  <script src="zones.js"></script>
+  <script src="quests.js"></script>
+  <script src="enemies.js"></script>
+</body>
+</html>
